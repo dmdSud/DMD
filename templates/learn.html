@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block comonI %}
+
+
+<link rel="stylesheet" href="/static/css/cources_css/style.css">
+<link rel="stylesheet" href="/static/css/cources_css/prism.css">
+<script src="/static/js/prism.js"></script>
+   
+    <div class="home-articals max-width-1 m-auto font1">
+        <h1>{{cdata.title}}</h1>
+        <div class="contener m-auto">
+
+           {{cdata.cource_book|safe}}
+        </div>
+        </div>
+
+        {% endblock comonI %}
+

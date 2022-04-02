@@ -1,0 +1,40 @@
+    {% extends 'base.html' %}
+
+    {% block comonI %}
+
+    <div class="content max-width-1 m-auto">
+        <div class="content-left">
+            <h1>DMD learn programing</h1>
+            <p>s.u.d DMD will tech you programing for free.</p>
+            <p>you cant requre pc or laptop for it.</p>
+            <p>it is easy to learn. </p>
+
+        </div>
+        <div class="content-right">
+            <img src="static/img/matr.jpg" alt="dmd">
+        </div>
+    </div>
+    <div class="max-width-1 m-auto">
+        <hr>
+    </div>
+    <div class="home-articals max-width-1 m-auto font1">
+        <h2>learn now</h2>
+        {% for cname in ct_class%}
+        <div>
+        <div class="home-artical">
+            <div class="artical-img">
+                <img src="{{cname.logo_link}}" alt="logo">
+            </div>
+            <div class="artical-cont">
+               <a href="/learn/{{cname.slug}}"><h3>{{cname.title}}</h3></a>
+                <p>use - {{cname.use}}</p>
+            </div>
+            
+        </div>
+        <!-- <a href="" class="btn">learn</a> -->
+    </div>
+        {% endfor %}
+
+    </div>
+
+    {% endblock comonI %}

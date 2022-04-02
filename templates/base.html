@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dmd</title>
+    {%load static%}
+    <link rel="stylesheet" href="{%static 'css/utils.css' %}">
+    <link rel="stylesheet" href="{%static 'css/style.css' %}">
+    <link rel="stylesheet" href="{%static 'css/mobile.css' %}">
+
+</head>
+
+<body>
+    <nav class="navigation max-width-1 m-auto">
+        <div class="nav-left">
+            <div class="logo">
+                <span><img src="{%static 'img/dmdlogo.png' %}" alt="DMD"></span>
+            </div>
+            <ul>
+                <li><a href="/">home</a></li>
+                <li><a href="/about">about</a></li>
+                <li><a href="/contact">contact</a></li>
+                <li><a href="/courses ">courses</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <form action="/search" method="get">
+                <input class="from-input" type="search" placeholder="Search the corse" name="search">
+                <button class="btn" type="submit">search</button>
+            </form>
+
+        </div>
+
+    </nav>
+    <div class="max-width-1 m-auto vh">
+        <hr>
+    </div>
+
+    {% block comonI %}
+        
+    {% endblock comonI %}
+
+
+    <div class="footer">
+        Copyright &copy; 2022 s.u.d
+    </div>
+
+</body>
+
+</html>

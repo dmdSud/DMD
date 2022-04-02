@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block comonI %}
+
+
+<link rel="stylesheet" href="/static/css/cources_css/style.css">
+<link rel="stylesheet" href="/static/css/cources_css/prism.css">
+<script src="/static/js/prism.js"></script>
+<style>
+    .dij{
+        height: 300px;
+        border: 2px solid black;
+        border-radius: 250%;
+        text-align: center;
+    }
+    .sasta{
+        height: 300px;
+    }
+    @media screen and (max-width:1200px){
+        .dij{
+        display: none;
+    }
+    }
+</style>
+   
+    <div class="home-articals max-width-1 m-auto font1" style="height: 150vh;">
+        <h2>about us</h2>
+        <center>
+        <img src="/static/img/matr.jpg" alt="" class="dij">
+        </center>
+        <center class="font2">
+
+            in this technical time
+            teaching computer programming is only source of income.
+            in these period
+            <br>
+            but to many student dont have enough mony for that.
+            thats why they miss the practicality.
+            for those students we made this platform.
+            <br>
+            for learning programming heare you dont nead pc or laptop 
+            you only nead a smartphone for that.
+            this platform is totally free
+            <br>
+            
+        </center>
+        <h2>our moto</h2>
+        <center>
+        to teach students practical programming
+        and make india self reliant.
+        </center>
+        <h2>project by</h2>
+        <center>
+            <img src="/static/img/Strance.png" alt="" class="sasta">
+            <h2>s.u.d</h2>
+        </center>
+</div>
+    {% endblock comonI %}

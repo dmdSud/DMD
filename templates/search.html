@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block comonI %}
+
+    <div class="home-articals max-width-1 m-auto font1">
+        <h2>{{fresult}} results for {{sched}}</h2>
+        {% for cname in ct_class%}
+        <div class="home-artical">
+            <div class="artical-img">
+                <img src="{{cname.logo_link}}" alt="">
+            </div>
+           
+            <div class="artical-cont">
+                <a href="/learn/{{cname.slug}}"><h3>{{cname.title}}</h3></a>
+                 <p>use - {{cname.use}}</p>
+             </div>
+        </div>
+        {%endfor%}
+
+    </div>
+
+{% endblock comonI %}

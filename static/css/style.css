@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navigation {
+    font-family: var(--fontb);
+    height: 74px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.nav-left {
+    font-size: 30px;
+    display: flex;
+    cursor: pointer;
+}
+
+.logo{
+    margin-top: 15px;
+}
+
+.logo img{
+    height: 42px;
+    width: 67px;
+}
+
+/* .nav-right {} */
+
+.nav-left ul li {
+    list-style: none;
+    margin: 0 14px;
+
+}
+
+.nav-left ul {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+
+}
+
+.nav-left ul li a {
+    text-decoration: none;
+    font-family: var(--fonta);
+    color: black;
+    font-size: 20px;
+}
+
+.nav-left ul li a:hover {
+    color: black;
+    font-weight: bolder;
+}
+
+.content {
+    display: flex;
+    height: 100%;
+    /* background-color: rgb(235, 235, 243); */
+    margin-top: 32px;
+}
+
+.content-left {
+    font-family: var(--fonta);
+    /* width: 50%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 40px;
+}
+
+.content-right {
+    /* width: 50%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 105px;
+}
+
+.content-right img {
+    height: 300px;
+    border: 2px solid black;
+    border-radius: 250%;
+}
+
+.footer {
+    height: 50px;
+    width: 100%;
+    background-color: rgb(41, 39, 39);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.home-articals {
+    background-color: rgb(248, 248, 248);
+    height: 100vh;
+    padding-top: 12px;
+    padding-bottom: 25px;
+}
+
+.home-artical {
+    display: flex;
+    margin: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+
+.artical-img img{
+    height: 115px;
+    width: 101px;
+}
+
+.home-artical  a{
+   text-decoration: none;
+   color: black;
+}
+.home-artical  a:hover{
+    color: rgb(82, 80, 80);
+    font-weight: bolder;
+ }
+
+ home-artical button{
+     margin-right: 100%;
+ }
+
+.artical-cont{
+    align-self: center;
+    padding: 25px;
+}
+
+
+.vh {
+    padding-top: 10px;
+}

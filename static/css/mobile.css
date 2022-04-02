@@ -1,0 +1,36 @@
+@media screen and (max-width:1200px){
+    .navigation{
+        flex-direction: column;
+        margin-bottom: 25px;
+
+    }
+    .nav-left{
+        flex-direction: column;
+        text-align: center;
+    }
+   
+    .vh{
+        padding-top: 95px;
+    }
+    .content{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .content-right{
+        display: none;
+    }
+    .home-artical{
+        flex-direction: column;
+    }
+    .artical-img {
+        text-align: center;
+        /* align-self: center; */
+    }
+    .artical-cont{
+        text-align: center;
+    }
+    .from-input{
+        width: 47%;
+    }
+   
+}
